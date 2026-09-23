@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Maqueta demostrativa del Portal de Colonos del Instituto Nacional de Colonización.">
+  <meta name="theme-color" content="#008542">
+  <title>Portal de Colonos · INC</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23008542'/%3E%3Cpath d='M9 24V11l7-4 7 4v13h-5v-7h-4v7H9Z' fill='white'/%3E%3Ccircle cx='24' cy='8' r='3' fill='%23E98300'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="boot-splash" class="boot-splash" role="status" aria-label="Cargando el Portal de Colonos">
+    <img class="boot-logo" src="assets/inc-logo.png" alt="">
+    <span class="boot-kicker">Instituto Nacional<br>de Colonización</span>
+    <svg class="boot-ring" viewBox="0 0 64 64" aria-hidden="true">
+      <circle class="boot-ring-track" cx="32" cy="32" r="27"></circle>
+      <circle class="boot-ring-arc" cx="32" cy="32" r="27"></circle>
+    </svg>
+    <p class="boot-caption">Preparando tu portal<span class="boot-dots" aria-hidden="true"><i></i><i></i><i></i></span></p>
+  </div>
+
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <svg class="sr-only" aria-hidden="true" focusable="false">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/><path d="M9.5 20v-6h5v6"/></symbol>
+    <symbol id="i-land" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3Z"/><path d="M9 3v15M15 6v15"/></symbol>
+    <symbol id="i-money" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 8.5c-.8-.7-1.8-1-3-1-1.7 0-3 1-3 2.4 0 3.7 6 1.5 6 5.2 0 1.4-1.3 2.4-3 2.4-1.3 0-2.5-.4-3.3-1.2M12 5.5v13"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6Z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-4 2.7-7 6-7s6 3 6 7"/><path d="M16 5.5a3 3 0 0 1 0 5.5M17 14c2.5.8 4 3 4 6"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.7 9a2.5 2.5 0 1 1 3.2 2.4c-.9.4-1.4 1-1.4 2.1M12 17h.01"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 4.2 2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.7 2.7L16.5 9"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 20h16"/></symbol>
+    <symbol id="i-location" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-5 3.6-8 8-8s8 3 8 8"/></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24"><path d="M10 4H4v16h6M14 8l4 4-4 4M8 12h10"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.7-.9 1.2-1.8-.3-.5-.1-1.2.5-1.4.7-.2 1.3-.1 2 .1 1.6.5 3.3-1 3.3-2.9 0-6.6-3.1-12-7-12Z"/><circle cx="8" cy="11" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor" stroke="none"/><circle cx="16" cy="11" r="1.3" fill="currentColor" stroke="none"/></symbol>
+  </svg>
+
+  <!-- Login -->
+  <section id="view-login" class="view public-view active" aria-labelledby="login-title">
+    <div class="login-layout">
+      <div class="login-brand">
+        <span class="login-kicker">Instituto Nacional de Colonización</span>
+        <h1>Tu vínculo con la tierra, más cerca.</h1>
+        <p>Consultá tus fracciones, revisá tu estado de cuenta y gestioná tus pagos en un mismo lugar.</p>
+        <div class="login-signature">Portal de Colonos<br>Servicios en línea</div>
+      </div>
+      <div class="login-panel">
+        <div class="login-card">
+          <span class="inc-official-logo inc-official-logo-lg">
+            <img class="inc-symbol" src="assets/inc-logo.png" alt="">
+            <span class="inc-logo-text">Instituto Nacional<br>de Colonización</span>
+          </span>
+          <h2 id="login-title">Te damos la bienvenida</h2>
+          <p>Ingresá con tu identidad digital para acceder a tus servicios.</p>
+          <button id="login-button" class="btn btn-primary" type="button">
+            <span class="spinner" aria-hidden="true"></span>
+            <svg class="icon" aria-hidden="true"><use href="#i-lock"></use></svg>
+            <span class="button-label">Ingresar con ID Uruguay</span>
+          </button>
+          <div class="security-note">
+            <svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>
+            <span>Tu acceso se realiza mediante ID Uruguay. El portal no solicita ni guarda contraseñas.</span>
+          </div>
+          <div class="login-links">
+            <button class="btn btn-text" type="button" data-modal="help">Necesito ayuda</button>
+            <button class="btn btn-text" type="button" data-go="terms">Términos y condiciones</button>
+          </div>
+          <p class="demo-caption">Demostración: el ingreso es simulado y no solicita credenciales reales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terms -->
+  <section id="view-terms" class="view public-view terms-shell" aria-labelledby="terms-title">
+    <header class="simple-header">
+      <span class="inc-official-logo" aria-label="Instituto Nacional de Colonización">
+        <img class="inc-symbol" src="assets/inc-logo.png" alt="">
+        <span class="inc-logo-text">Instituto Nacional<br>de Colonización</span>
+      </span>
+      <strong>Términos y condiciones</strong>
+    </header>
+    <main class="terms-wrap">
+      <div class="terms-card">
+        <h1 id="terms-title">Términos y condiciones</h1>
+        <div class="terms-meta"><span>Versión 1.0</span><span>Vigencia demostrativa: 01/09/2026</span></div>
+        <div class="terms-content" tabindex="0">
+          <h3>1. Alcance de esta demostración</h3>
+          <p>Esta versión del Portal de Colonos utiliza datos ficticios y tiene como único fin validar la experiencia de consulta, navegación y presentación de información.</p>
+          <h3>2. Identidad digital</h3>
+          <p>El acceso real se realizará mediante los mecanismos de identidad que defina el Instituto. Esta maqueta no solicita, procesa ni almacena credenciales.</p>
+          <h3>3. Información financiera</h3>
+          <p>Los saldos, pagos, contratos, fechas y documentos mostrados son demostrativos. Ninguna acción ejecutada aquí produce efectos administrativos o financieros.</p>
+          <h3>4. Uso responsable</h3>
+          <p>La persona usuaria deberá mantener actualizados sus datos de contacto y verificar los detalles antes de confirmar una operación en la futura versión productiva.</p>
+          <h3>5. Disponibilidad</h3>
+          <p>El Instituto podrá actualizar el contenido, las funcionalidades y estos términos cuando corresponda, informando la versión vigente dentro del portal.</p>
+        </div>
+        <label class="check-row" for="terms-check">
+          <input id="terms-check" type="checkbox">
+          <span>Declaro que leí y acepto los términos y condiciones de uso.</span>
+        </label>
+        <div class="terms-actions">
+          <button class="btn btn-secondary" type="button" data-modal="terms-decline">No aceptar</button>
+          <button id="accept-terms" class="btn btn-primary" type="button" disabled>Aceptar y continuar</button>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!-- Authenticated app -->
+  <div id="view-app" class="view app-shell">
+    <header class="app-header">
+      <div class="header-logo-zone">
+        <button id="menu-button" class="btn btn-icon mobile-menu-button" type="button" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-menu"></use></svg>
+        </button>
+        <a class="logo-home" href="#/inicio" data-page-link="dashboard" aria-label="Instituto Nacional de Colonización. Ir al inicio">
+          <span class="inc-official-logo">
+            <img class="inc-symbol" src="assets/inc-logo.png" alt="">
+            <span class="inc-logo-text">Instituto Nacional<br>de Colonización</span>
+          </span>
+        </a>
+      </div>
+      <div class="header-main">
+        <button id="unit-button" class="unit-selector" type="button" aria-label="Seleccionar unidad productiva. Actual: La Esperanza, Colonia Ejemplo, Florida" aria-haspopup="menu" aria-controls="unit-popover" aria-expanded="false">
+          <span class="unit-icon-box"><svg class="icon" aria-hidden="true"><use href="#i-land"></use></svg></span>
+          <span class="unit-selector-copy"><span>Unidad productiva</span><strong id="unit-name">La Esperanza · Colonia Ejemplo · Florida</strong></span>
+          <svg class="icon" aria-hidden="true"><use href="#i-down"></use></svg>
+        </button>
+        <div class="header-actions">
+          <span class="tooltip-wrap theme-toggle-wrap">
+            <button id="theme-toggle-button" class="header-icon-button" type="button" aria-pressed="false" aria-label="Probar paleta de marca alternativa">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-palette"></use></svg>
+            </button>
+            <span class="tooltip header-tooltip" role="tooltip">Probar paleta alternativa</span>
+          </span>
+          <button id="notification-button" class="header-icon-button notification-button" type="button" aria-label="Abrir notificaciones, 3 sin leer" aria-controls="notification-popover" aria-expanded="false">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-bell"></use></svg>
+            <span class="counter" id="notification-counter">3</span>
+          </button>
+          <button id="user-button" class="user-trigger" type="button" aria-label="Abrir menú de María Pérez" aria-controls="profile-popover" aria-haspopup="menu" aria-expanded="false">
+            <span class="avatar">MP</span>
+            <span class="user-copy"><strong>María Pérez</strong><span>Titular · Colono</span></span>
+            <svg class="icon user-chevron" aria-hidden="true"><use href="#i-down"></use></svg>
+          </button>
+          <span class="tooltip-wrap logout-header-action">
+            <button id="header-logout-button" class="header-icon-button" type="button" aria-label="Cerrar sesión" title="Cerrar sesión">
+              <svg class="icon" aria-hidden="true"><use href="#i-logout"></use></svg>
+            </button>
+            <span class="tooltip header-tooltip" role="tooltip">Cerrar sesión</span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <aside id="sidebar" class="sidebar" aria-label="Navegación principal">
+      <p class="nav-section-label">Principal</p>
+      <nav class="side-nav">
+        <button class="nav-link active" type="button" data-page="dashboard"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-home"></use></svg>Inicio</button>
+        <button class="nav-link" type="button" data-page="fractions"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-land"></use></svg>Mis fracciones</button>
+        <button class="nav-link" type="button" data-page="finance"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-money"></use></svg>Estado financiero</button>
+        <button class="nav-link" type="button" data-page="payments"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-card"></use></svg>Pagos</button>
+        <button class="nav-link" type="button" data-page="notifications"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-bell"></use></svg>Notificaciones <span class="badge badge-orange nav-notice-count">3</span></button>
+        <button class="nav-link" type="button" data-page="style-guide"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-grid"></use></svg>Guía de estilos</button>
+      </nav>
+      <p class="nav-section-label" style="margin-top:22px">Próximamente</p>
+      <nav class="side-nav" aria-label="Funcionalidades futuras">
+        <button class="nav-link" type="button" disabled title="Disponible próximamente"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-file"></use></svg>Trámites <span class="badge badge-gray">Próx.</span></button>
+        <button class="nav-link" type="button" disabled title="Disponible próximamente"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-users"></use></svg>Comunidad <span class="badge badge-gray">Próx.</span></button>
+        <button class="nav-link" type="button" disabled title="Disponible próximamente"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-help"></use></svg>Ayuda y soporte <span class="badge badge-gray">Próx.</span></button>
+      </nav>
+    </aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+    <main id="main-content" class="app-main" tabindex="-1">
+      <div class="content-wrap">
+        <!-- Dashboard -->
+        <section id="page-dashboard" class="page-view active" aria-labelledby="dashboard-title">
+          <div class="page-header">
+            <div>
+              <h1 id="dashboard-title">Buen día, María</h1>
+              <p>Consultá tu cuenta, tus fracciones y tus pagos.</p>
+              <span class="unit-chip"><svg class="icon" aria-hidden="true"><use href="#i-location"></use></svg>La Esperanza · Colonia Ejemplo · Florida</span>
+            </div>
+          </div>
+          <div class="alerts-stack">
+            <div class="alert alert-info">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-info"></use></svg>
+              <div><h3>Mantené tus datos actualizados</h3><p>Verificá tu correo y teléfono para recibir comunicaciones oficiales del Instituto.</p></div>
+            </div>
+            <div class="alert alert-warning">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-calendar"></use></svg>
+              <div><h3>Próximo vencimiento</h3><p>Tenés un saldo de <strong>UYU 18.450</strong> con vencimiento el <strong>30/09/2026</strong>.</p></div>
+            </div>
+          </div>
+          <div class="summary-grid">
+            <article class="card summary-card">
+              <div class="summary-card-top"><span class="eyebrow">Saldo pendiente</span><span class="badge badge-orange">Vence 30/09/2026</span></div>
+              <div class="metric">UYU 18.450</div>
+              <p>Arrendamiento correspondiente a septiembre de 2026.</p>
+              <button class="btn btn-primary" type="button" data-page="finance">Consultar estado financiero <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button>
+            </article>
+            <article class="card summary-card">
+              <div class="summary-card-top"><span class="eyebrow">Mis fracciones</span><span class="badge badge-green">2 activas</span></div>
+              <div class="metric">2 vínculos</div>
+              <p>Fracción 12 y Fracción 13 asociadas a tu cuenta.</p>
+              <button class="btn btn-secondary" type="button" data-page="fractions">Ver mis fracciones <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button>
+            </article>
+            <article class="card summary-card">
+              <div class="summary-card-top"><span class="eyebrow">Último pago</span><span class="badge badge-green">Aplicado</span></div>
+              <div class="metric">UYU 17.900</div>
+              <p>Aplicado el 15/08/2026 · Referencia PG-2026-001198.</p>
+              <button class="btn btn-secondary" type="button" data-page="payments">Ver historial <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button>
+            </article>
+          </div>
+          <section class="card section-card" aria-labelledby="next-actions-title">
+            <div class="section-heading"><h2 id="next-actions-title">Próximas acciones</h2></div>
+            <div class="action-list">
+              <div class="action-row">
+                <span class="action-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-calendar"></use></svg></span>
+                <div class="action-copy"><strong>Consultar vencimiento de septiembre</strong><span>Vence el 30/09/2026 · UYU 18.450</span></div>
+                <button class="btn btn-neutral btn-sm" type="button" data-page="period">Ver período</button>
+              </div>
+              <div class="action-row">
+                <span class="action-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-land"></use></svg></span>
+                <div class="action-copy"><strong>Revisar información de la Fracción 12</strong><span>24,5 ha · Contrato ARR-4587</span></div>
+                <button class="btn btn-neutral btn-sm" type="button" data-page="fractions">Ver vínculo</button>
+              </div>
+              <div class="action-row">
+                <span class="action-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-download"></use></svg></span>
+                <div class="action-copy"><strong>Descargar último recibo</strong><span>Pago aplicado · 15/08/2026</span></div>
+                <button class="btn btn-neutral btn-sm" type="button" data-download="receipt">Descargar</button>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Fractions -->
+        <section id="page-fractions" class="page-view" aria-labelledby="fractions-title">
+          <div class="page-header">
+            <div><h1 id="fractions-title">Fracciones con las que tenés vínculo</h1><p>Consultá tus vínculos activos y el historial asociado a tu cuenta.</p></div>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Estado de los vínculos">
+            <button id="tab-active" class="tab" role="tab" aria-selected="true" aria-controls="fractions-active" type="button" data-fraction-tab="active">Activas</button>
+            <button id="tab-history" class="tab" role="tab" aria-selected="false" aria-controls="fractions-history" type="button" data-fraction-tab="history">Históricas</button>
+          </div>
+          <div id="fractions-active" class="tab-panel" role="tabpanel" aria-labelledby="tab-active">
+            <div class="fraction-grid">
+              <article class="card fraction-card">
+                <div class="fraction-card-header"><div><span class="eyebrow">La Esperanza</span><h2>Fracción 12</h2></div><span class="badge badge-green">Activo</span></div>
+                <div class="detail-list">
+                  <div class="detail-item"><span>Superficie</span><strong>24,5 ha</strong></div>
+                  <div class="detail-item"><span>Tipo de vínculo</span><strong>Colono titular</strong></div>
+                  <div class="detail-item"><span>Contrato</span><strong>ARR-4587</strong></div>
+                  <div class="detail-item"><span>Saldo asociado</span><strong>UYU 18.450</strong></div>
+                </div>
+                <button class="btn btn-primary" type="button" data-page="finance">Ver detalle financiero</button>
+              </article>
+              <article class="card fraction-card">
+                <div class="fraction-card-header"><div><span class="eyebrow">La Esperanza</span><h2>Fracción 13</h2></div><span class="badge badge-green">Activo</span></div>
+                <div class="detail-list">
+                  <div class="detail-item"><span>Superficie</span><strong>18,2 ha</strong></div>
+                  <div class="detail-item"><span>Tipo de vínculo</span><strong>Cotitular</strong></div>
+                  <div class="detail-item"><span>Contrato</span><strong>ARR-4631</strong></div>
+                  <div class="detail-item"><span>Saldo asociado</span><strong>UYU 0</strong></div>
+                </div>
+                <button class="btn btn-secondary" type="button" data-fraccion13>Ver detalle financiero</button>
+              </article>
+            </div>
+          </div>
+          <div id="fractions-history" class="tab-panel" role="tabpanel" aria-labelledby="tab-history" hidden>
+            <div class="alert alert-info" style="margin-bottom:16px">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-info"></use></svg>
+              <div><h3>Consulta histórica</h3><p>Un vínculo histórico conserva sus pagos y documentos anteriores, aunque ya no se encuentre activo.</p></div>
+            </div>
+            <article class="card fraction-card">
+              <div class="fraction-card-header"><div><span class="eyebrow">Colonia Ejemplo</span><h2>Fracción 8</h2></div><span class="badge badge-gray">Histórico</span></div>
+              <div class="detail-list">
+                <div class="detail-item"><span>Superficie</span><strong>11,7 ha</strong></div>
+                <div class="detail-item"><span>Tipo de vínculo</span><strong>Cotitular</strong></div>
+                <div class="detail-item"><span>Finalización</span><strong>12/03/2024</strong></div>
+                <div class="detail-item"><span>Disponibilidad</span><strong>Solo consulta</strong></div>
+              </div>
+              <button class="btn btn-secondary" type="button" data-historical-payments>Consultar pagos anteriores</button>
+            </article>
+          </div>
+        </section>
+
+        <!-- Finance -->
+        <section id="page-finance" class="page-view" aria-labelledby="finance-title">
+          <div class="page-header">
+            <div><h1 id="finance-title">Estado financiero</h1><p>Consultá períodos, conceptos, documentos y vencimientos.</p></div>
+            <div class="page-actions">
+              <button class="btn btn-secondary" type="button" data-download="statement"><svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>Exportar estado de cuenta</button>
+              <button class="btn btn-primary" type="button" data-modal="order"><svg class="icon" aria-hidden="true"><use href="#i-card"></use></svg>Ponerse al día</button>
+            </div>
+          </div>
+          <div class="stat-grid">
+            <article class="card stat-card"><span class="stat-label">Total pendiente</span><strong>UYU 18.450</strong><small>1 período</small></article>
+            <article class="card stat-card"><span class="stat-label">Vencido</span><strong>UYU 0</strong><small>Sin deuda vencida</small></article>
+            <article class="card stat-card"><span class="stat-label">Próximo vencimiento</span><strong>UYU 18.450</strong><small>30/09/2026</small></article>
+            <article class="card stat-card"><span class="stat-label">Fracción seleccionada</span><strong>Fracción 12</strong><small>Contrato ARR-4587</small></article>
+          </div>
+          <form id="finance-filters" class="filters">
+            <div class="field"><label for="finance-fraction">Fracción</label><select id="finance-fraction" class="select"><option value="all">Todas</option><option value="12" selected>Fracción 12</option><option value="13">Fracción 13</option></select></div>
+            <div class="field"><label for="finance-year">Año</label><select id="finance-year" class="select"><option value="all">Todos</option><option value="2026" selected>2026</option><option value="2025">2025</option></select></div>
+            <div class="field"><label for="finance-status">Estado</label><select id="finance-status" class="select"><option value="all">Todos</option><option value="pendiente">Pendiente</option><option value="pagado">Pagado</option><option value="rechazado">Rechazado</option><option value="vencido">Vencido</option></select></div>
+            <div class="field"><label for="finance-search">Buscar período</label><div class="search-wrap"><svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg><input id="finance-search" class="input" type="search" placeholder="Ej.: septiembre"></div></div>
+            <button class="btn btn-neutral" type="button" id="clear-finance">Limpiar filtros</button>
+          </form>
+          <div class="table-card">
+            <table class="data-table" aria-describedby="finance-table-caption">
+              <caption id="finance-table-caption" class="sr-only">Períodos financieros de la Fracción 12</caption>
+              <thead><tr><th>Período</th><th>Fracción</th><th>Vencimiento</th><th>Estado</th><th>Importe</th><th>Acción</th></tr></thead>
+              <tbody id="finance-rows">
+                <tr data-status="pendiente" data-year="2026" data-fraction="12" data-search="septiembre 2026"><td data-label="Período"><strong>Septiembre 2026</strong></td><td data-label="Fracción">Fracción 12</td><td data-label="Vencimiento">30/09/2026</td><td data-label="Estado"><span class="badge badge-orange">Pendiente</span></td><td data-label="Importe"><strong>UYU 18.450</strong></td><td class="table-action-cell"><button class="btn btn-secondary btn-sm" type="button" data-page="period">Ver detalle</button></td></tr>
+                <tr data-status="pagado" data-year="2026" data-fraction="12" data-search="julio 2026"><td data-label="Período"><strong>Julio 2026</strong></td><td data-label="Fracción">Fracción 12</td><td data-label="Vencimiento">31/07/2026</td><td data-label="Estado"><span class="badge badge-green">Pagado</span></td><td data-label="Importe"><strong>UYU 17.900</strong></td><td class="table-action-cell"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="aplicado">Ver detalle</button></td></tr>
+                <tr data-status="pagado" data-year="2026" data-fraction="12" data-search="junio 2026"><td data-label="Período"><strong>Junio 2026</strong></td><td data-label="Fracción">Fracción 12</td><td data-label="Vencimiento">30/06/2026</td><td data-label="Estado"><span class="badge badge-green">Pagado</span></td><td data-label="Importe"><strong>UYU 17.650</strong></td><td class="table-action-cell"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="aplicado">Ver detalle</button></td></tr>
+                <tr data-status="rechazado" data-year="2026" data-fraction="12" data-search="mayo 2026"><td data-label="Período"><strong>Mayo 2026</strong></td><td data-label="Fracción">Fracción 12</td><td data-label="Vencimiento">31/05/2026</td><td data-label="Estado"><span class="badge badge-red">Rechazado</span></td><td data-label="Importe"><strong>UYU 17.300</strong></td><td class="table-action-cell"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="rechazado">Ver detalle</button></td></tr>
+              </tbody>
+            </table>
+            <div id="finance-empty" class="empty-state">
+              <span class="empty-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-search"></use></svg></span>
+              <h2>No encontramos períodos</h2>
+              <p>Ajustá los filtros para volver a consultar tu estado financiero.</p>
+              <button class="btn btn-secondary" type="button" id="empty-clear-finance">Limpiar filtros</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Period -->
+        <section id="page-period" class="page-view" aria-labelledby="period-title">
+          <nav class="breadcrumb" aria-label="Migas de pan"><a href="#/estado-financiero" data-page-link="finance">Estado financiero</a><span aria-hidden="true">/</span><span>Septiembre 2026</span></nav>
+          <article class="card detail-hero">
+            <div>
+              <h1 id="period-title">Septiembre 2026</h1>
+              <div class="detail-meta"><span>Fracción 12</span><span>Contrato ARR-4587</span><span>Vence 30/09/2026</span></div>
+            </div>
+            <span class="badge badge-orange">Pendiente</span>
+          </article>
+          <div class="component-grid">
+            <article class="card card-pad">
+              <h2>Desglose del período</h2>
+              <div class="concept-list">
+                <div class="concept-row"><span>Renta</span><strong>UYU 16.000</strong></div>
+                <div class="concept-row"><span>Fondo de Previsión</span><strong>UYU 2.000</strong></div>
+                <div class="concept-row"><span>Ajuste del período</span><strong>UYU 450</strong></div>
+                <div class="concept-row"><span>Bonificación</span><strong>UYU 0</strong></div>
+                <div class="concept-row total"><span>Total</span><strong>UYU 18.450</strong></div>
+              </div>
+            </article>
+            <article class="card card-pad">
+              <h2>Documentos y acciones</h2>
+              <p style="color:var(--muted)">Consultá la explicación del cálculo o revisá la boleta demostrativa antes de continuar.</p>
+              <div class="action-list">
+                <button class="btn btn-secondary" type="button" data-modal="rent-calc">Ver cálculo de renta</button>
+                <button class="btn btn-neutral" type="button" data-modal="bill">Ver boleta</button>
+                <button class="btn btn-primary" type="button" data-modal="order">Pagar este período</button>
+                <button class="btn btn-text" type="button" data-page="finance">Volver al estado financiero</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Payments -->
+        <section id="page-payments" class="page-view" aria-labelledby="payments-title">
+          <div class="page-header"><div><h1 id="payments-title">Historial de pagos</h1><p>Revisá operaciones, estados, referencias y comprobantes disponibles.</p></div></div>
+          <form id="payment-filters" class="filters">
+            <div class="field"><label for="pay-from">Desde</label><input id="pay-from" class="input" type="date" value="2026-04-01"></div>
+            <div class="field"><label for="pay-fraction">Fracción</label><select id="pay-fraction" class="select"><option value="all">Todas</option><option value="12">Fracción 12</option><option value="13">Fracción 13</option><option value="8">Fracción 8</option></select></div>
+            <div class="field"><label for="pay-status">Estado</label><select id="pay-status" class="select"><option value="all">Todos</option><option value="aplicado">Aplicado</option><option value="confirmado">Confirmado</option><option value="rechazado">Rechazado</option><option value="anulado">Anulado</option><option value="incidencia">Incidencia</option></select></div>
+            <div class="field"><label for="pay-method">Medio de pago</label><select id="pay-method" class="select"><option value="all">Todos</option><option value="portal">Portal</option><option value="manual">Registro manual</option></select></div>
+            <button class="btn btn-neutral" type="button" id="clear-payments">Limpiar filtros</button>
+          </form>
+          <div class="table-card">
+            <table class="data-table">
+              <caption class="sr-only">Historial de pagos de María Pérez</caption>
+              <thead><tr><th>Fecha</th><th>Fracción</th><th>Período</th><th>Importe</th><th>Estado</th><th>Referencia</th><th>Acción</th></tr></thead>
+              <tbody id="payment-rows">
+                <tr data-status="aplicado" data-fraction="12" data-method="portal"><td data-label="Fecha">15/08/2026</td><td data-label="Fracción">Fracción 12</td><td data-label="Período">Julio 2026</td><td data-label="Importe"><strong>UYU 17.900</strong></td><td data-label="Estado"><span class="badge badge-green">Aplicado</span></td><td data-label="Referencia">PG-2026-001198</td><td class="table-action-cell"><div class="table-actions"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="aplicado">Ver detalle</button><button class="btn btn-neutral btn-sm" type="button" data-download="receipt">Descargar recibo</button></div></td></tr>
+                <tr data-status="aplicado" data-fraction="12" data-method="portal"><td data-label="Fecha">14/07/2026</td><td data-label="Fracción">Fracción 12</td><td data-label="Período">Junio 2026</td><td data-label="Importe"><strong>UYU 17.650</strong></td><td data-label="Estado"><span class="badge badge-green">Aplicado</span></td><td data-label="Referencia">PG-2026-001054</td><td class="table-action-cell"><div class="table-actions"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="aplicado">Ver detalle</button><button class="btn btn-neutral btn-sm" type="button" data-download="receipt">Descargar recibo</button></div></td></tr>
+                <tr data-status="aplicado" data-fraction="13" data-method="portal"><td data-label="Fecha">08/06/2026</td><td data-label="Fracción">Fracción 13</td><td data-label="Período">Mayo 2026</td><td data-label="Importe"><strong>UYU 12.800</strong></td><td data-label="Estado"><span class="badge badge-green">Aplicado</span></td><td data-label="Referencia">PG-2026-000921</td><td class="table-action-cell"><div class="table-actions"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="aplicado">Ver detalle</button><button class="btn btn-neutral btn-sm" type="button" data-download="receipt">Descargar recibo</button></div></td></tr>
+                <tr data-status="rechazado" data-fraction="12" data-method="portal"><td data-label="Fecha">02/06/2026</td><td data-label="Fracción">Fracción 12</td><td data-label="Período">Mayo 2026</td><td data-label="Importe"><strong>UYU 17.300</strong></td><td data-label="Estado"><span class="badge badge-red">Rechazado</span></td><td data-label="Referencia">PG-2026-000899</td><td class="table-action-cell"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="rechazado">Ver detalle</button></td></tr>
+                <tr data-status="anulado" data-fraction="8" data-method="manual"><td data-label="Fecha">20/04/2026</td><td data-label="Fracción">Fracción 8</td><td data-label="Período">Marzo 2024</td><td data-label="Importe"><strong>UYU 9.600</strong></td><td data-label="Estado"><span class="badge badge-gray">Anulado</span></td><td data-label="Referencia">PG-2026-000713</td><td class="table-action-cell"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="cancelado">Ver detalle</button></td></tr>
+              </tbody>
+            </table>
+            <div id="payments-empty" class="empty-state">
+              <span class="empty-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-search"></use></svg></span>
+              <h2>No hay pagos para estos filtros</h2><p>Probá con otro estado, fracción o medio de pago.</p>
+              <button class="btn btn-secondary" type="button" id="empty-clear-payments">Limpiar filtros</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Payment detail -->
+        <section id="page-payment-detail" class="page-view" aria-labelledby="payment-detail-title">
+          <nav class="breadcrumb" aria-label="Migas de pan"><a href="#/pagos" data-page-link="payments">Pagos</a><span aria-hidden="true">/</span><span>Detalle de la operación</span></nav>
+          <div class="page-header">
+            <div><h1 id="payment-detail-title">Estado del pago</h1><p>Referencia PG-2026-001198</p></div>
+            <div class="field" style="min-width:260px"><label for="demo-payment-state">Estado demostrativo</label><select id="demo-payment-state" class="select"><option value="confirmado">Confirmado</option><option value="aplicado" selected>Aplicado</option><option value="rechazado">Rechazado</option><option value="verificacion">Pendiente de verificación</option><option value="incidencia">Incidencia</option><option value="cancelado">Operación cancelada</option></select></div>
+          </div>
+          <div class="component-grid">
+            <article class="card card-pad">
+              <div id="payment-status-alert" class="alert alert-success" style="margin-bottom:18px">
+                <svg class="icon icon-lg" aria-hidden="true"><use href="#i-check"></use></svg>
+                <div><h3 id="payment-status-title">Pago aplicado</h3><p id="payment-status-message">Tu pago fue procesado correctamente y tu estado de cuenta ya fue actualizado.</p></div>
+              </div>
+              <div class="detail-list">
+                <div class="detail-item"><span>Referencia</span><strong>PG-2026-001198</strong></div>
+                <div class="detail-item"><span>Fecha</span><strong>15/08/2026</strong></div>
+                <div class="detail-item"><span>Importe</span><strong>UYU 17.900</strong></div>
+                <div class="detail-item"><span>Fracción</span><strong>Fracción 12</strong></div>
+                <div class="detail-item"><span>Período</span><strong>Julio 2026</strong></div>
+                <div class="detail-item"><span>Medio</span><strong>Portal</strong></div>
+              </div>
+              <div class="button-row">
+                <button id="payment-document-button" class="btn btn-primary" type="button" data-download="receipt">Descargar recibo</button>
+                <button id="payment-retry-button" class="btn btn-secondary" type="button" hidden data-modal="order">Reintentar pago</button>
+                <button class="btn btn-text" type="button" data-page="payments">Volver al historial</button>
+              </div>
+              <p id="payment-support" style="display:none;margin-top:14px"><a href="#" data-modal="help">Necesito ayuda con este pago</a></p>
+            </article>
+            <article class="card card-pad">
+              <h2>Seguimiento de la operación</h2>
+              <div id="payment-timeline" class="timeline"></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Notifications -->
+        <section id="page-notifications" class="page-view" aria-labelledby="notifications-title">
+          <div class="page-header">
+            <div><h1 id="notifications-title">Notificaciones</h1><p>Consultá novedades importantes vinculadas con tu cuenta.</p></div>
+            <div class="page-actions"><button class="btn btn-secondary" type="button" id="mark-all-read">Marcar todas como leídas</button></div>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Filtrar notificaciones">
+            <button class="tab" role="tab" aria-selected="true" type="button" data-notice-filter="all">Todas</button>
+            <button class="tab" role="tab" aria-selected="false" type="button" data-notice-filter="unread">No leídas</button>
+          </div>
+          <div id="notification-list" class="notifications-layout" style="margin-top:18px">
+            <article class="notice-item unread" data-notice data-read="false">
+              <span class="notice-symbol"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-calendar"></use></svg></span>
+              <div class="notice-body"><strong>Próximo vencimiento</strong><p>Tenés un período pendiente con vencimiento próximo. Consultá el detalle de forma segura.</p><span class="notice-meta">Hoy · 09:10</span></div>
+              <div class="notice-actions"><button class="btn btn-secondary btn-sm" type="button" data-page="period">Abrir</button><button class="btn btn-text btn-sm" type="button" data-mark-read>Marcar como leída</button></div>
+            </article>
+            <article class="notice-item unread" data-notice data-read="false">
+              <span class="notice-symbol"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-check"></use></svg></span>
+              <div class="notice-body"><strong>Pago aplicado</strong><p>Tu estado de cuenta fue actualizado. Ya está disponible el recibo correspondiente.</p><span class="notice-meta">15/08/2026 · 16:42</span></div>
+              <div class="notice-actions"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="aplicado">Abrir</button><button class="btn btn-text btn-sm" type="button" data-mark-read>Marcar como leída</button></div>
+            </article>
+            <article class="notice-item unread" data-notice data-read="false">
+              <span class="notice-symbol" style="color:var(--red);background:var(--red-soft)"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-alert"></use></svg></span>
+              <div class="notice-body"><strong>Pago rechazado</strong><p>Una operación no pudo aprobarse. Revisá el estado antes de volver a intentar.</p><span class="notice-meta">02/06/2026 · 11:25</span></div>
+              <div class="notice-actions"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="rechazado">Abrir</button><button class="btn btn-text btn-sm" type="button" data-mark-read>Marcar como leída</button></div>
+            </article>
+            <article class="notice-item" data-notice data-read="true">
+              <span class="notice-symbol" style="color:var(--blue);background:var(--blue-soft)"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-info"></use></svg></span>
+              <div class="notice-body"><strong>Pago confirmado</strong><p>Recibimos correctamente una operación y está en proceso de aplicación.</p><span class="notice-meta">14/07/2026 · 14:08</span></div>
+              <div class="notice-actions"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="confirmado">Abrir</button></div>
+            </article>
+            <article class="notice-item" data-notice data-read="true">
+              <span class="notice-symbol" style="color:var(--orange);background:var(--orange-soft)"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-alert"></use></svg></span>
+              <div class="notice-body"><strong>Pago con incidencia</strong><p>Una operación confirmada todavía no pudo aplicarse. No es necesario volver a pagar.</p><span class="notice-meta">10/07/2026 · 10:16</span></div>
+              <div class="notice-actions"><button class="btn btn-secondary btn-sm" type="button" data-payment-state="incidencia">Abrir</button></div>
+            </article>
+            <article class="notice-item" data-notice data-read="true">
+              <span class="notice-symbol"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-download"></use></svg></span>
+              <div class="notice-body"><strong>Recibo disponible</strong><p>El recibo de tu último pago aplicado ya puede descargarse desde el historial.</p><span class="notice-meta">15/08/2026 · 16:45</span></div>
+              <div class="notice-actions"><button class="btn btn-secondary btn-sm" type="button" data-download="receipt">Descargar</button></div>
+            </article>
+          </div>
+          <div id="notices-empty" class="empty-state card" style="margin-top:18px"><span class="empty-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-bell"></use></svg></span><h2>No tenés notificaciones sin leer</h2><p>Cuando haya una novedad importante aparecerá en esta sección.</p></div>
+        </section>
+
+        <!-- Style guide -->
+        <section id="page-style-guide" class="page-view" aria-labelledby="style-guide-title">
+          <div class="page-header"><div><h1 id="style-guide-title">Guía de estilos</h1><p>Patrones funcionales de la maqueta para validar con el cliente.</p></div><span class="badge badge-blue">Solo demostración</span></div>
+
+          <section class="card component-section">
+            <h2>Paleta de colores</h2>
+            <p style="margin-top:-6px;color:var(--muted)">El color de marca cambia con el botón de paleta del encabezado. Los colores de estado se mantienen fijos para no perder su significado.</p>
+            <p class="field-label" style="margin:18px 0 10px">Color de marca (según el tema activo)</p>
+            <div class="swatch-row">
+              <div class="swatch-item"><span class="swatch" style="background:var(--brand)"></span><strong>Marca</strong><span>--brand</span></div>
+              <div class="swatch-item"><span class="swatch" style="background:var(--brand-dark)"></span><strong>Marca oscuro</strong><span>--brand-dark</span></div>
+              <div class="swatch-item"><span class="swatch" style="background:var(--brand-light)"></span><strong>Marca claro</strong><span>--brand-light</span></div>
+              <div class="swatch-item"><span class="swatch" style="background:var(--brand-soft)"></span><strong>Marca suave</strong><span>--brand-soft</span></div>
+            </div>
+            <p class="field-label" style="margin:22px 0 10px">Colores de estado (fijos)</p>
+            <div class="swatch-row">
+              <div class="swatch-item"><span class="swatch" style="background:var(--green)"></span><strong>Éxito</strong><span>#008542</span></div>
+              <div class="swatch-item"><span class="swatch" style="background:var(--orange-brand)"></span><strong>Advertencia</strong><span>#e98300</span></div>
+              <div class="swatch-item"><span class="swatch" style="background:var(--red)"></span><strong>Error</strong><span>#c62828</span></div>
+              <div class="swatch-item"><span class="swatch" style="background:var(--blue)"></span><strong>Información</strong><span>#0b74c9</span></div>
+              <div class="swatch-item"><span class="swatch" style="background:var(--muted)"></span><strong>Neutro</strong><span>#5f6863</span></div>
+            </div>
+          </section>
+
+          <section class="card component-section">
+            <h2>Tipografía</h2>
+            <div class="type-sample"><span class="type-label">H1 · 2,25rem / 800</span><h1 style="margin:4px 0 0">Título principal de página</h1></div>
+            <div class="type-sample"><span class="type-label">H2 · 1,35rem / 700</span><h2 style="margin:4px 0 0">Título de sección</h2></div>
+            <div class="type-sample"><span class="type-label">H3 · 1,05rem / 700</span><h3 style="margin:4px 0 0">Subtítulo de bloque</h3></div>
+            <div class="type-sample"><span class="type-label">Texto de cuerpo · 0,94rem / 400</span><p style="margin:4px 0 0">Este es un párrafo de ejemplo con el estilo de texto que se usa en todo el portal.</p></div>
+            <div class="type-sample" style="margin-bottom:0"><span class="type-label">Texto de ayuda · 0,82rem / 400</span><p class="field-help" style="margin:4px 0 0">Texto secundario para aclaraciones y ayudas de campo.</p></div>
+          </section>
+
+          <section class="card component-section"><h2>Botones y acciones</h2><div class="button-row">
+            <button class="btn btn-primary" type="button" data-toast="success">Aceptar</button>
+            <button class="btn btn-primary" type="button" data-toast="info">Continuar</button>
+            <button class="btn btn-secondary" type="button" data-toast="success">Guardar</button>
+            <button class="btn btn-primary" type="button" data-modal="confirmation">Pagar</button>
+            <button class="btn btn-neutral" type="button" data-toast="info">Volver</button>
+            <button class="btn btn-text" type="button" data-modal="cancel">Cancelar</button>
+            <button class="btn btn-danger" type="button" data-modal="reject">Rechazar</button>
+            <button class="btn btn-danger" type="button" data-modal="destructive">Revocar</button>
+            <button class="btn btn-warning" type="button" data-toast="warning"><svg class="icon" aria-hidden="true"><use href="#i-alert"></use></svg>Advertencia</button>
+            <button class="btn btn-danger" type="button" data-toast="error">Mostrar error</button>
+            <button class="btn" type="button" disabled>Deshabilitado</button>
+            <button class="btn btn-primary btn-loading" type="button" disabled><span class="spinner" aria-hidden="true"></span>Cargando</button>
+          </div></section>
+
+          <section class="card component-section"><h2>Campos</h2><div class="field-grid">
+            <div class="field"><label for="demo-text">Campo de texto</label><input id="demo-text" class="input" type="text" placeholder="Escribí un valor"></div>
+            <div class="field"><label for="demo-search">Buscador</label><div class="search-wrap"><svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg><input id="demo-search" class="input" type="search" placeholder="Buscar"></div></div>
+            <div class="field"><label for="demo-select">Selector</label><select id="demo-select" class="select"><option>Fracción 12</option><option>Fracción 13</option></select></div>
+            <div class="field"><label for="demo-date">Fecha</label><input id="demo-date" class="input" type="date" value="2026-09-30"></div>
+            <div class="field"><span class="field-label">Opciones</span><div class="radio-row"><label><input type="radio" name="demo-radio" checked> Opción A</label><label><input type="radio" name="demo-radio"> Opción B</label></div></div>
+            <div class="field"><span class="field-label">Preferencia</span><label class="check-row" style="padding:10px"><input type="checkbox" checked> Recibir avisos</label></div>
+            <div class="field" style="grid-column:1/-1"><label for="demo-textarea">Observaciones</label><textarea id="demo-textarea" class="textarea" maxlength="180" placeholder="Ingresá una observación"></textarea><div class="counter-row"><span class="field-help">Máximo 180 caracteres.</span><span class="field-help" id="textarea-count">0 / 180</span></div></div>
+            <div class="field"><label for="demo-help">Campo con ayuda</label><input id="demo-help" class="input" type="text" value="ARR-4587"><span class="field-help">Usá el número que figura en el contrato.</span></div>
+            <div class="field"><label for="demo-valid">Campo válido</label><input id="demo-valid" class="input input-valid" type="text" value="María Pérez"><span class="field-help" style="color:var(--green-dark)">Dato verificado.</span></div>
+            <div class="field"><label for="demo-error">Campo con error</label><input id="demo-error" class="input input-error" type="text" value="" aria-describedby="demo-error-msg"><span id="demo-error-msg" class="field-error">Este campo es obligatorio.</span></div>
+            <div class="field"><label for="demo-disabled">Campo deshabilitado</label><input id="demo-disabled" class="input" type="text" value="Disponible próximamente" disabled></div>
+          </div></section>
+
+          <section class="card component-section">
+            <h2>Iconografía</h2>
+            <div class="icon-grid">
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-home"></use></svg><span>home</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-land"></use></svg><span>land</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-money"></use></svg><span>money</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-card"></use></svg><span>card</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-bell"></use></svg><span>bell</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-grid"></use></svg><span>grid</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-file"></use></svg><span>file</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-users"></use></svg><span>users</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-help"></use></svg><span>help</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-menu"></use></svg><span>menu</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-close"></use></svg><span>close</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-info"></use></svg><span>info</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-alert"></use></svg><span>alert</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-check"></use></svg><span>check</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-calendar"></use></svg><span>calendar</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-chevron"></use></svg><span>chevron</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-down"></use></svg><span>down</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-search"></use></svg><span>search</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-download"></use></svg><span>download</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-location"></use></svg><span>location</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-user"></use></svg><span>user</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-logout"></use></svg><span>logout</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-eye"></use></svg><span>eye</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-more"></use></svg><span>more</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-lock"></use></svg><span>lock</span></div>
+              <div class="icon-swatch"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-palette"></use></svg><span>palette</span></div>
+            </div>
+          </section>
+
+          <section class="card component-section">
+            <h2>Tarjetas</h2>
+            <div class="component-grid">
+              <article class="card summary-card" style="min-height:auto">
+                <div class="summary-card-top"><span class="eyebrow">Resumen</span><span class="badge badge-orange">Ejemplo</span></div>
+                <div class="metric">UYU 18.450</div>
+                <p>Tarjeta de resumen, usada en Inicio.</p>
+              </article>
+              <article class="card stat-card">
+                <span class="stat-label">Estadística</span><strong>UYU 18.450</strong><small>Usada en Estado financiero</small>
+              </article>
+              <article class="card fraction-card">
+                <div class="fraction-card-header"><div><span class="eyebrow">Ejemplo</span><h2>Fracción 12</h2></div><span class="badge badge-green">Activo</span></div>
+                <div class="detail-list"><div class="detail-item"><span>Superficie</span><strong>24,5 ha</strong></div><div class="detail-item"><span>Contrato</span><strong>ARR-4587</strong></div></div>
+              </article>
+              <article class="card detail-hero" style="margin-bottom:0">
+                <div><h1 style="font-size:1.4rem">Hero de detalle</h1><div class="detail-meta"><span>Usada en Período y Detalle de pago</span></div></div>
+                <span class="badge badge-orange">Pendiente</span>
+              </article>
+            </div>
+          </section>
+
+          <section class="card component-section"><h2>Estados y badges</h2><div class="badge-row">
+            <span class="badge badge-green">Activo</span><span class="badge badge-gray">Histórico</span><span class="badge badge-orange">Pendiente</span><span class="badge badge-blue">Confirmado</span><span class="badge badge-green">Aplicado</span><span class="badge badge-red">Rechazado</span><span class="badge badge-gray">Anulado</span><span class="badge badge-orange">Incidencia</span><span class="badge badge-red">Vencido</span><span class="badge badge-orange">Próximo a vencer</span>
+          </div></section>
+
+          <section class="card component-section"><h2>Avisos</h2><div class="alerts-stack">
+            <div class="alert alert-info"><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg><div><h3>Información</h3><p>Este mensaje aporta contexto para continuar.</p></div></div>
+            <div class="alert alert-success"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><div><h3>Operación completada</h3><p>El cambio se guardó correctamente.</p></div></div>
+            <div class="alert alert-warning"><svg class="icon" aria-hidden="true"><use href="#i-alert"></use></svg><div><h3>Revisá antes de continuar</h3><p>Esta acción necesita tu confirmación.</p></div></div>
+            <div class="alert alert-error"><svg class="icon" aria-hidden="true"><use href="#i-alert"></use></svg><div><h3>No pudimos completar la acción</h3><p>Intentá nuevamente o consultá con soporte.</p></div></div>
+          </div></section>
+
+          <div class="component-grid">
+            <section class="card component-section"><h2>Pestañas, paginación y ayuda</h2>
+              <div class="tabs" role="tablist" aria-label="Ejemplo de pestañas"><button class="tab" aria-selected="true" type="button" data-guide-tab="summary">Resumen</button><button class="tab" aria-selected="false" type="button" data-guide-tab="detail">Detalle</button></div>
+              <p id="guide-tab-content" style="margin:12px 0;color:var(--muted)">Contenido resumido del ejemplo.</p>
+              <div style="height:16px"></div>
+              <div class="pagination" aria-label="Paginación"><button class="page-button active" type="button" data-demo-page="1">1</button><button class="page-button" type="button" data-demo-page="2">2</button><button class="page-button" type="button" data-demo-page="3">3</button></div>
+              <div style="height:16px"></div>
+              <span class="tooltip-wrap"><button class="btn btn-secondary" type="button">Pasá el cursor</button><span class="tooltip" role="tooltip">Información adicional del control.</span></span>
+            </section>
+            <section class="card component-section"><h2>Estados de contenido</h2>
+              <div class="component-demo"><h3>Cargando información</h3><div class="skeleton-stack"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton short"></div></div></div>
+              <div class="component-demo" style="margin-top:12px"><h3>Error de carga</h3><p>No pudimos recuperar la información.</p><button class="btn btn-secondary btn-sm" type="button" data-toast="success">Intentar nuevamente</button></div>
+              <div class="component-demo" style="margin-top:12px"><h3>Servicio temporalmente no disponible</h3><p style="margin:0;color:var(--muted)">Tus datos permanecen seguros. Probá más tarde.</p></div>
+              <div class="component-demo" style="margin-top:12px">
+                <h3>Spinner de carga inicial</h3>
+                <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+                  <svg class="boot-ring" viewBox="0 0 64 64" aria-hidden="true">
+                    <circle class="boot-ring-track" cx="32" cy="32" r="27"></circle>
+                    <circle class="boot-ring-arc" cx="32" cy="32" r="27"></circle>
+                  </svg>
+                  <button id="replay-boot-splash" class="btn btn-secondary btn-sm" type="button">Ver pantalla de carga completa</button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="card component-section"><h2>Tabla de ejemplo</h2><div class="table-card" style="box-shadow:none"><table class="data-table"><thead><tr><th>Concepto</th><th>Estado</th><th>Importe</th></tr></thead><tbody><tr><td data-label="Concepto">Renta</td><td data-label="Estado"><span class="badge badge-orange">Pendiente</span></td><td data-label="Importe">UYU 16.000</td></tr><tr><td data-label="Concepto">Fondo de Previsión</td><td data-label="Estado"><span class="badge badge-orange">Pendiente</span></td><td data-label="Importe">UYU 2.000</td></tr></tbody></table></div></section>
+
+          <section class="card component-section"><h2>Línea de seguimiento</h2><div class="timeline" style="max-width:620px"><div class="timeline-item done"><span class="timeline-marker">1</span><div class="timeline-copy"><strong>Orden creada</strong><span>La orden quedó registrada.</span></div></div><div class="timeline-item done"><span class="timeline-marker">2</span><div class="timeline-copy"><strong>Pago confirmado</strong><span>La operación fue confirmada.</span></div></div><div class="timeline-item current"><span class="timeline-marker">3</span><div class="timeline-copy"><strong>Aplicando el pago</strong><span>Esperando actualización del sistema financiero del INC.</span></div></div><div class="timeline-item"><span class="timeline-marker">4</span><div class="timeline-copy"><strong>Recibo disponible</strong><span>Se habilitará al finalizar.</span></div></div></div></section>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Unit selector -->
+  <section id="unit-popover" class="popover unit-menu" role="menu" aria-label="Unidades productivas disponibles">
+    <button class="unit-option" type="button" role="menuitemradio" aria-checked="true" data-unit="La Esperanza · Colonia Ejemplo · Florida">
+      <span class="unit-icon-box"><svg class="icon" aria-hidden="true"><use href="#i-land"></use></svg></span>
+      <span class="unit-option-copy"><strong>La Esperanza</strong><span>Colonia Ejemplo · Florida</span></span>
+      <svg class="icon unit-check" aria-hidden="true"><use href="#i-check"></use></svg>
+    </button>
+    <button class="unit-option" type="button" role="menuitemradio" aria-checked="false" data-unit="Fracción 12 · Colonia Ejemplo · Florida">
+      <span class="unit-icon-box"><svg class="icon" aria-hidden="true"><use href="#i-location"></use></svg></span>
+      <span class="unit-option-copy"><strong>Fracción 12</strong><span>Contrato ARR-4587 · Florida</span></span>
+      <svg class="icon unit-check" aria-hidden="true"><use href="#i-check"></use></svg>
+    </button>
+    <button class="unit-option" type="button" role="menuitemradio" aria-checked="false" data-unit="Fracción 13 · Colonia Ejemplo · Florida">
+      <span class="unit-icon-box"><svg class="icon" aria-hidden="true"><use href="#i-location"></use></svg></span>
+      <span class="unit-option-copy"><strong>Fracción 13</strong><span>Contrato ARR-4631 · Florida</span></span>
+      <svg class="icon unit-check" aria-hidden="true"><use href="#i-check"></use></svg>
+    </button>
+  </section>
+
+  <!-- Notification panel -->
+  <section id="notification-popover" class="popover" aria-label="Notificaciones recientes">
+    <div class="popover-header"><strong>Notificaciones</strong><button class="btn btn-text btn-sm" type="button" id="panel-mark-all">Marcar todas</button></div>
+    <div class="popover-list">
+      <div class="mini-notice unread"><span class="dot"></span><div><strong>Próximo vencimiento</strong><span>Revisá el período pendiente.</span></div></div>
+      <div class="mini-notice unread"><span class="dot"></span><div><strong>Pago aplicado</strong><span>Tu recibo ya está disponible.</span></div></div>
+      <div class="mini-notice unread"><span class="dot"></span><div><strong>Pago rechazado</strong><span>Consultá el detalle antes de reintentar.</span></div></div>
+    </div>
+    <div class="popover-footer"><button class="btn btn-text" type="button" data-page="notifications">Ver todas las notificaciones</button></div>
+  </section>
+
+  <!-- Profile menu -->
+  <section id="profile-popover" class="popover profile-menu" aria-label="Menú de usuario">
+    <button type="button" data-modal="profile"><svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg>Mi perfil</button>
+    <button type="button" data-modal="notification-preferences"><svg class="icon" aria-hidden="true"><use href="#i-bell"></use></svg>Preferencias de notificaciones</button>
+    <button type="button" data-modal="help"><svg class="icon" aria-hidden="true"><use href="#i-help"></use></svg>Ayuda</button>
+    <button type="button" id="logout-button"><svg class="icon" aria-hidden="true"><use href="#i-logout"></use></svg>Cerrar sesión</button>
+  </section>
+
+  <!-- Reusable modal -->
+  <div id="modal-backdrop" class="modal-backdrop" role="presentation">
+    <section id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+      <div class="modal-header"><h2 id="modal-title">Título</h2><button class="modal-close" type="button" aria-label="Cerrar ventana"><svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg></button></div>
+      <div id="modal-description" class="modal-body"></div>
+      <div id="modal-actions" class="modal-actions"></div>
+    </section>
+  </div>
+
+  <div id="toast-region" class="toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
